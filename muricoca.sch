@@ -433,28 +433,6 @@ F 3 "~" V 9550 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L acheronSymbols:MXSwitch SW15
-U 1 1 5EE3DBE1
-P 8575 4025
-F 0 "SW15" H 8575 4050 50  0000 C CNN
-F 1 "Tab_125" H 8575 3925 59  0000 C CNN
-F 2 "acheron_MX:MX125" H 8575 4025 50  0001 C CNN
-F 3 "" H 8575 4025 50  0001 C CNN
-	1    8575 4025
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D15
-U 1 1 5EE3DBE7
-P 8575 3575
-F 0 "D15" V 8529 3645 50  0000 L CNN
-F 1 "1N4148W" V 8620 3645 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" V 8575 3575 50  0001 C CNN
-F 3 "~" V 8575 3575 50  0001 C CNN
-	1    8575 3575
-	0    1    1    0   
-$EndComp
-$Comp
 L acheronSymbols:MXSwitch SW16
 U 1 1 5EE3DBED
 P 9550 4025
@@ -482,15 +460,6 @@ Wire Wire Line
 	8575 2400 8575 2200
 Wire Wire Line
 	9550 3475 9550 3275
-Wire Wire Line
-	8575 3475 8575 3275
-Connection ~ 8575 3275
-Wire Wire Line
-	8575 3275 7775 3275
-Wire Wire Line
-	8225 4025 8050 4025
-Wire Wire Line
-	8050 4025 8050 2950
 Wire Wire Line
 	8050 2950 8225 2950
 Connection ~ 8050 2950
@@ -530,8 +499,6 @@ Wire Wire Line
 	8575 2200 9550 2200
 Wire Wire Line
 	9200 2950 9000 2950
-Wire Wire Line
-	8575 3275 9550 3275
 Connection ~ 8575 2200
 Text GLabel 7775 2200 0    50   Input ~ 0
 ROW1
@@ -1368,8 +1335,6 @@ Wire Wire Line
 	8575 4350 7775 4350
 Wire Wire Line
 	8225 5100 8050 5100
-Wire Wire Line
-	8050 5100 8050 4025
 Text GLabel 7775 4350 0    50   Input ~ 0
 ROW3
 Wire Wire Line
@@ -2212,4 +2177,34 @@ Wire Wire Line
 	10325 6500 13875 6500
 Wire Wire Line
 	13100 7250 13525 7250
+Wire Wire Line
+	7775 3275 9550 3275
+Wire Wire Line
+	8050 2950 8050 5100
+$Comp
+L Device:D_Small D15
+U 1 1 5EE55104
+P 8575 3575
+F 0 "D15" V 8529 3645 50  0000 L CNN
+F 1 "1N4148W" V 8620 3645 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 8575 3575 50  0001 C CNN
+F 3 "~" V 8575 3575 50  0001 C CNN
+	1    8575 3575
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8575 3475 8575 3275
+Wire Wire Line
+	8050 4025 8225 4025
+$Comp
+L acheronSymbols:MXSwitch SW15
+U 1 1 5EE5510C
+P 8575 4025
+F 0 "SW15" H 8500 4050 50  0000 L CNN
+F 1 "Tab_150" H 8575 3925 59  0000 C CNN
+F 2 "acheron_MX:MX150" H 8575 4025 50  0001 C CNN
+F 3 "" H 8575 4025 50  0001 C CNN
+	1    8575 4025
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
